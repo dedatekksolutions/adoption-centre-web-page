@@ -1,0 +1,11 @@
+/* Red Border CSS to highlight all sections and boxes */
+
+body, div, header, nav, main, section, footer, img, p, h1, h2, a {
+    border: 2px solid red;
+  }
+  
+  /* Optional: Set a contrasting background for better visibility */
+  body {
+    background-color: #ffefef;
+  }
+  

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Good Boy Dog Fostering and Adoption Centre</title>
+  <link id="default-style" rel="stylesheet" href="./css/styles.css">
+  <!-- Link to the alternate CSS for red borders (initially disabled) -->
+  <link id="red-border-style" rel="stylesheet" href="./css/red-border.css" disabled>
+</head>
+<body>
+
+<!-- Header will be loaded here -->
+<div id="header-container"></div>
+
+  <!-- Main content section -->
+  <main id="main-content">
+    <h1>Contact Us</h1>
+    <p>If you have any questions or would like to learn more about fostering or adopting, feel free to reach out to us!</p>
+  </main>
+
+  <!-- Footer section -->
+  <footer id="footer">
+    <p>&copy; 2024 Good Boy Dog Fostering and Adoption Centre. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+
+<!-- JavaScript to dynamically load the header and footer -->
+  <script>
+    // Load header component
+    document.addEventListener("DOMContentLoaded", function() {
+      var headerContainer = document.getElementById('header-container');
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          headerContainer.innerHTML = data;
+
+          // Now that header is loaded, attach event listener to toggle button
+          var toggleButton = document.getElementById('toggle-style-btn');
+          toggleButton.addEventListener('click', function() {
+            var redBorderStyle = document.getElementById('red-border-style');
+            if (redBorderStyle.disabled) {
+              redBorderStyle.disabled = false;
+            } else {
+              redBorderStyle.disabled = true;
+            }
+          });
+        });
+      
+      // Load footer component
+      var footerContainer = document.getElementById('footer-container');
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          footerContainer.innerHTML = data;
+        });
+    });
+  </script>
