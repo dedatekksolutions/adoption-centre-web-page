@@ -145,3 +145,4 @@ Enjoy exploring the Good Boy Dog Fostering and Adoption Centre website locally!
 - The instructions for each platform include the steps to install Python, run the local server, and access the website.
 - The file structure, customization options, and toggle for the red border are also explained.
 # adoption-centre-web-page
+# adoption-centre-web-page
