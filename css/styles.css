@@ -1,0 +1,139 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #2c3e50;
+  color: white;
+  margin-bottom: 20px;
+  border-bottom: 4px solid #1a242f;
+}
+
+.logo img {
+  border: 2px solid white;
+  padding: 5px;
+  margin-right: 20px;
+}
+
+.navigation {
+  flex-grow: 1;
+}
+
+.navigation a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+/* Button to toggle stylesheets */
+.button-container {
+  margin: 20px 0;
+}
+
+.toggle-button {
+  background-color: #2980b9;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-button:hover {
+  background-color: #1c5d86;
+}
+
+#main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.intro {
+  margin-bottom: 40px;
+}
+
+.intro h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-family: "Oxygen", sans-serif;
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Dog profile section */
+.dog-profile {
+  height: 35vh;            /* Set the card to 35% of the viewport height */
+  padding: 0;              /* No padding to ensure the content fits */
+  border: 2px solid #2980b9;
+  border-radius: 10px;
+  background-color: #f0faff;
+  margin-bottom: 40px;
+  text-align: center;
+  overflow: auto;          /* Make the content scrollable if it overflows */
+}
+
+/* Ensure image scales correctly within the card */
+.dog-profile img {
+  border-radius: 10px 10px 0 0;
+}
+
+/* Adjust text and spacing */
+.dog-profile-content {
+  padding: 10px;
+  overflow: auto;          /* Scrolling inside the content area */
+}
+
+.dog-profile h2,
+.dog-profile p {
+  margin: 10px 0;
+}
+
+.dog-profile h2 {
+  font-size: 1.5em;
+  color: #2980b9;
+}
+
+.dog-profile p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Footer styling */
+#footer {
+  padding: 20px;
+  background-color: #2c3e50;
+  color: white;
+  border-top: 4px solid #1a242f;
+  text-align: center;
+}
+
+/* Responsive Design using Media Queries */
+@media (max-width: 768px) {
+  .dog-profile {
+    height: 40vh;          /* Increase height on smaller screens */
+  }
+  
+}
