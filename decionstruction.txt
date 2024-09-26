@@ -7,7 +7,7 @@ Let’s break down the three websites you shared and speculate on their HTML str
    - **Footer**: There seems to be no visible footer in this specific screenshot, but usually, the footer would include additional information like contact, policies, or links.
 
 #### Potential HTML Structure:
-```html
+html
 <header>
     <div class="top-bar"> <!-- Logo, Navigation --> </div>
 </header>
@@ -26,7 +26,7 @@ Let’s break down the three websites you shared and speculate on their HTML str
 <footer>
     <!-- Footer content (not visible in the screenshot) -->
 </footer>
-```
+
 
 #### CSS Layout:
    - **Header**: Likely uses **flexbox** for aligning the logo and navigation links horizontally.
@@ -41,7 +41,7 @@ Let’s break down the three websites you shared and speculate on their HTML str
    - **Footer**: No visible footer here, but it's common to include footer links at the bottom of business websites like this one.
 
 #### Potential HTML Structure:
-```html
+html
 <header>
     <div class="logo"> <!-- Logo and navigation links --> </div>
     <div class="banner"> <!-- Email and contact info --> </div>
@@ -65,7 +65,7 @@ Let’s break down the three websites you shared and speculate on their HTML str
 <footer>
     <!-- Footer content -->
 </footer>
-```
+
 
 #### CSS Layout:
    - **Header**: Could use **flexbox** to align the logo and navigation elements horizontally.
@@ -80,7 +80,7 @@ Let’s break down the three websites you shared and speculate on their HTML str
    - **Footer**: No visible footer in this screenshot, but it would likely contain standard contact or legal information.
 
 #### Potential HTML Structure:
-```html
+html
 <header>
     <div class="logo-nav"> <!-- Logo and navigation links --> </div>
 </header>
@@ -103,7 +103,7 @@ Let’s break down the three websites you shared and speculate on their HTML str
 <footer>
     <!-- Footer content -->
 </footer>
-```
+
 
 #### CSS Layout:
    - **Header**: Similar to the previous examples, likely uses **flexbox** for aligning the logo and navigation links.
